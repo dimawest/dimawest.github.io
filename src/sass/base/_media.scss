@@ -1,0 +1,571 @@
+@media (max-width: 2100px) {
+    .promo {
+        .button-midlePX {
+            display: none;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 12px;
+            width: 100px;
+            height: 40px;
+        }
+    }
+    .footer {
+        display: none;
+    }
+}
+@media (max-width: 1600px) {
+    .promo {
+        .button-midlePX {
+            display: none;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 12px;
+            width: 100px;
+            height: 40px;
+        }
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .promo {
+        min-height: 800px;
+        &__footer {
+            display: block;
+        }
+            .container {
+                width: 768px;
+            }
+        &__hr {
+            width: 768px;
+        }
+        &__social {
+            display: none;
+        }
+        &__wrapvisible {
+            display: flex;
+            align-items: center;
+            background-color: rgb(0, 0, 0, 0.3);
+            border: 2px solid rgb(0, 0, 0, 0.7);
+            height: 75%;
+            border-radius: 10px;
+        }
+        &__socvesible {
+            display: flex;
+        }
+        &__linkvisible {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            padding: 2px 5px 2px 5px;
+            width: 65px;
+            height: 55px;
+            border-radius: 100%;
+            transition: 0.4s all;
+        }
+    }
+    .header {
+        min-height: 110px;
+        .container {
+            width: 980px;
+            margin: 0 auto;
+        }
+        &__navbar {
+            display: grid;
+            grid-template-columns: 110px 740px 80px;
+            grid-template-rows: 90px;
+        }
+        &_icon {
+            width: 75%;
+        }
+        &__list {
+            &-wrapper {
+                display: grid;
+                grid-template-columns: 107px 101px 165px 165px 128px 83px 57px;
+                grid-template-rows: 90px;
+            }
+            &-wrapper > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.02);
+                }
+            }
+            &_link {
+                font-size: 12px;
+            }
+        }
+        .button {
+            display: none;
+            margin-top: 35px;
+            width: 80px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .button-midlePX {
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 12px;
+            width: 100px;
+            height: 40px;
+        }
+    }
+    .subheader {
+        .container {
+            width: 768px;
+            margin: 0 auto;
+        }
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style-type: none;
+        }
+        &__tab {
+            margin: 0 5px;
+            width: 148px;
+            height: 50px;
+            border: 2px solid #6B6B6B;
+            background-color: rgba(0, 0, 0, .6);
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: #E1DBDB;
+            text-transform: uppercase;
+            line-height: 48px;
+            transform: skewX(-25deg);
+            cursor: pointer;
+            transition: 0.5s all;
+            &:hover {
+                box-shadow: none;
+            }
+            div {
+                transform: skewX(25deg);
+            }
+        }
+        &__content {
+            width: 768px;
+            &_active {
+                display: flex;
+            }
+        }
+        &-item {
+            width: 610px;
+            padding: 20px 7px 25px 7px;
+            &_block {
+                display: block;
+            }
+            &_wrapper {
+                display: flex;
+                width: calc(200% + 20px);
+            }
+            &_content {
+                width: 50%;
+                margin-right: 0;
+                transform: translateX(-100%);
+                transition: 0.5s all;
+                &_active {
+                    transform: translateX(0%);
+                    margin-right: 4px;
+                }
+            }
+            &_list {
+                /* display: none; */
+                position: relative;
+                width: 50%;
+                margin: 0 0 0 20px;
+                padding: 0 20px 0 20px;
+                margin-bottom: 0;
+                transition: translateX(0%);
+                transition: 0.5s all;
+                &_active {
+                    transform: translateX(-100%);
+                    margin-left: 0;
+                }
+            }
+            &__subwrapper {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 10px 25px 4px;
+            }
+            &__game {
+                padding: 31px;
+                border: 2px solid rgba(0, 0, 0, .7);
+                min-width: 85px;
+                min-height: 145px;
+                transition: 0.5s all;
+                &:hover {
+                    border: 2px solid rgba(0, 0, 0, .7);
+                    box-shadow: none;
+                    min-width: 85px;
+                    padding: 31px;
+                }
+                &-hw {
+                    margin-left: 0px;
+                    background: url(../img/halo_wars-min.jpg) center (center / cover) no-repeat;  // Halo: Wars 
+                }   
+                &-hr {
+                    background: url(../img/reach-min.jpg) center (center / cover) no-repeat;  // Halo Reach
+                }
+                &-hce {
+                    margin-right: 0px;
+                    background: url(../img/combat_evolved-min.png) center (center / cover) no-repeat;  // Halo: Combat Evolved
+                }
+                &-hftr {
+                    margin-left: 0px;
+                    background: url(../img/firetaem-min.jpg) center (center / cover) no-repeat;  // Halo: Fireteam Raven
+                }
+                &-htwo {
+                    background: url(../img/halo_2-min.jpeg) center (center / cover) no-repeat;  // Halo 2
+                }
+                &-hodst {
+                    margin-right: 0px;
+                    background: url(../img/odst-min.jpg) center (center / cover) no-repeat;  // Halo 3: ODST
+                }
+                &-three {
+                    margin-left: 0px;
+                    background: url(../img/halo_3-min.png) center (center / cover) no-repeat; // Halo 3
+                }
+                &-hsa {
+                    background: url(../img/assault-min.jpg) center (center / cover) no-repeat;  // Halo: Spartan Assault
+                    &:hover {
+                        margin: 0 2px 0 2px;
+                    }
+                }
+                &-hfour {
+                    margin-right: 0px;
+                    background: url(../img/halo_4-min.jpeg) center (center / cover) no-repeat;  // Halo 4
+                }
+                &-hss {
+                    margin-left: 0px;
+                    background: url(../img/spartan_strike-min.jpg) center (center / cover) no-repeat;  // Halo: Spartan Strike
+                }
+                &-guardians {
+                    background: url(../img/halo_5-min.jpg) center (center / cover) no-repeat;  // Halo 5: Guardians
+                }
+                &-hwtwo {
+                    margin-right: 0px;
+                    background: url(../img/wars_2-min.jpeg) center (center / cover) no-repeat;  // Halo 5: Guardians
+                }
+            }
+            &__book {
+                padding: 31px;
+                border: 2px solid rgba(0, 0, 0, .7);
+                min-width: 85px;
+                min-height: 145px;
+                transition: 0.5s all;
+                &:hover {
+                    box-shadow: none;
+                    border: 2px solid rgba(0, 0, 0, .7);
+                    min-width: 85px;
+                    padding: 31px;
+                }
+                &-htfor {
+                    margin-left: 0px;
+                    background: url(../img/fall_of_reach-min.png) center (center / cover) no-repeat; // Halo: The fall of reach
+                }
+                &-htf {
+                    background: url(../img/flood-min.jpg) center (center / cover) no-repeat; // Halo: The flood
+                }
+                &-hfs {
+                    margin-right: 0px;
+                    background: url(../img/first_strike-min.png) center (center / cover) no-repeat; // Halo: First Strike
+                }
+                &-hch {
+                    margin-left: 0px;
+                    background: url(../img/harvest_1-min.png) center (center / cover) no-repeat; // Halo: contact Harvest
+                }
+                &-hgoo {
+                    background: url(../img/onyx-min.jpg) center (center / cover) no-repeat; // Halo: Ghost of Onyx
+                }
+                &-hglass {
+                    margin-right: 0px;
+                    background: url(../img/Halo_Glasslands-min.jpg) center (center / cover) no-repeat; // Halo: Glasslands
+                }
+                &-hcr {
+                    margin-left: 0px;
+                    background: url(../img/criptum-min.jpg) center (center / cover) no-repeat; // Halo: Cryptum
+                }
+                &-hprim {
+                    background: url(../img/primordium-min.jpg) center (center / cover) no-repeat; // Halo: Primordium
+                }
+                &-hsil {
+                    margin-right: 0px;
+                    background: url() center (center / cover) no-repeat; // Halo: Silentium
+                }
+                &-httw {
+                    margin-left: 0px;
+                    background: url(../../img/thursdaywar-min.jpg) center (center / cover) no-repeat; // Halo: Halo: The Thursday War
+                }
+                &-hmd {
+                    background: url(../img/mortal_dicata-min.jpg) center (center / cover) no-repeat; // Halo: Mortal Dicata
+                }
+                &-hbc {
+                    margin-right: 0px;
+                    background: url(../img/Halo-Broken-Circle-min.jpg) center (center / cover) no-repeat; // Halo: Broken Circle
+                }
+            }
+            &__movie {
+                padding: 25px;
+                border: 2px solid rgba(0, 0, 0, .7);
+                min-width: 85px;
+                min-height: 125px;
+                transition: 0.5s all;
+                &:hover {
+                    box-shadow: none;
+                    border: 2px solid rgba(0, 0, 0, .7);
+                    min-width: 85px;
+                    padding: 25px;
+                }
+                &-hfud {
+                    margin-left: 4px;
+                    background: url(../img/unto_down-min.jpg) center (center / cover) no-repeat; // Halo: Forward Unto Down
+                }
+                &-htw {
+                    background: url(../img/halo_tw-min.jpg) center (center / cover) no-repeat; // Halo: Twillight
+                }
+                &-hser {
+                    margin-right: 10px;
+                    background: url(../img/serial-min.jpg) center (center / cover) no-repeat; // Halo serial
+                }
+                &-hleg {
+                    margin-left: 4px;
+                    background: url(../img/legend-min.jpg) center (center / cover) no-repeat; // Halo: Legend
+                }
+            }
+            &__border {
+                padding: 25px;
+                border: 2px solid #E8E8E8;
+                width: 110px;
+                height: 65px;
+                background-color: rgba(0, 0, 0, .7);
+                &-wars {
+                    padding: 17px;
+                }
+                &-reach {
+                    padding: 13.3px;
+                }
+                &-combat {
+                    padding: 4px;
+                }
+                &-fireteam {
+                    padding: 2px;
+                }
+                &-two {
+                    padding: 17px;
+                }
+                &-odst {
+                    padding: 9px;
+                }
+                &-hthr {
+                    padding: 18px;
+                }
+                &-spartanas {
+                    padding: 20px;
+                }
+                &-four {
+                    padding: 30px;
+                }
+                &-spartanst {
+                    padding: 20px;
+                }
+                &-hguards {
+                    padding: 21px;
+                }
+                &-warstwo {
+                    padding: 29px;
+                }
+                &-fallofreach {
+                    padding: 7px;
+                }
+                &-flood {
+                    padding: 7px;
+                }
+                &-firststrike {
+                    padding: 7px;
+                }
+                &-combatharvest {
+                    padding: 5px;
+                }
+                &-ghostt {
+                    padding: 7px;
+                }
+                &-glasslands {
+                    padding: 7px;
+                }
+                &-cryptum {
+                    padding: 10px;
+                }
+                &-primordium {
+                    padding: 9px;
+                }
+                &-silentium {
+                    padding: 9px;
+                }
+                &-thursdaydwar {
+                    padding: 5px;
+                }
+                &-mortaldictata {
+                    padding: 7px;
+                }
+                &-brokencircle {
+                    padding: 7px;
+                }
+            }
+        }
+    }
+    .footer {
+        display: none;
+    }
+        
+}
+@media (max-width: 545px) {
+    .promo {
+        background: url(../img/bg_mobil.jpg) center (center / cover) no-repeat;
+        min-height: 700px;
+        .button-midlePX {
+            display: none;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 12px;
+            width: 100px;
+            height: 40px;
+        }
+        &__footer {
+            display: none;
+        }
+        &__social {
+            display: none;
+        }
+        &__socvesible {
+            display: none;
+        }
+        .header {
+            min-height: 35px;
+            .container {
+                width: 320px;
+            }
+            &__mobile {
+                display: flex;
+                justify-content: space-between;
+                &-headindg {
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: #E1DBDB;
+                }
+                &-list {
+                    position: fixed;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    padding: 20px 15px;
+                    list-style-type: none;
+                    background-color: rgba(0,0,0, .4);
+                    transition: 0.5s all;
+                    &_active {
+                        display: flex;
+                        left: 0;
+                    }
+                }
+                &-item {
+                    margin: 0 10px 0 10px;
+                }
+                &-link {
+                    font-size: 8px;
+                    font-weight: 300;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #E1DBDB;
+                }
+                &-logo {
+                    display: flex;
+                    justify-content: center;
+                }
+                &-img {
+                    width: 45%;
+                }
+            }
+            .header__mobile > div {
+                width: 25%;
+                &:nth-child(2) {
+                    width: 50%;
+                }
+                &:nth-child(3) {
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2%;
+                }
+            }
+            .hamburger {
+                display: block;
+                position: absolute;
+                left: 3%;
+                top: 2.6%;
+                width: 26px;
+                height: 12px;
+                span {
+                    display: block; 
+                    height: 2px;
+                    width: 100%;
+                    background-color: #fff; 
+                    margin-bottom: 2px;
+                    transition: 0.5s all;
+                }
+                &_active {
+                    span {
+                        margin-bottom: -2px; 
+                        &:nth-child(1) {
+                            transform: translateY(3px) rotate(-45deg);
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            transform: translateY(3px) rotate(45deg);
+                        }
+                    }
+                }
+            }
+            &__navbar {
+                display: none;
+            }
+            &__list {
+                display: none;
+            }
+        }
+    }
+    .button-mobile {
+        display: block;
+        margin-top: 5px;
+        width: 50px;
+        height: 20px;
+        font-size: 5px;
+        font-weight: 300;
+        text-align: center;
+        color: #000;
+        border: none;
+        border-radius: 7px;
+    }
+    .subheader {
+        display: none;
+    }
+    .footer {
+        display: block;
+    }
+}

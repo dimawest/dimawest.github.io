@@ -1,0 +1,65 @@
+.promo {
+    min-height: 1140px;
+    background: url(../img/bg_promo.jpg) center (center / cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__hr {
+        margin-top: 15px;
+        display: block;
+        margin: 0 auto;
+        width: 1140px;
+        color: #fff;
+    }
+    &__item {
+        display: flex;
+        width: 55px;
+        margin: 0 10px 0 10px;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 400px;
+        height: 100px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 5px 2px 5px;
+        width: 65px;
+        height: 55px;
+        border-radius: 100%;
+        transition: 0.4s all;
+        &-github {
+            &:hover {
+                background-color: #54514D;
+            }
+        }
+        &-telegram {
+            &:hover {
+                background-color: $telegram;
+            }
+        }
+        &-coin {
+            &:hover {
+                background-color: $coin;
+            }
+        }
+        &-discord {
+            &:hover {
+                background-color: $discord;
+            }
+        }
+        &-youtube {
+            &:hover {
+                background-color: $youtube;
+            }
+        }
+    }
+}

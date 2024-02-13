@@ -1,0 +1,321 @@
+.subheader {
+    margin-top: 50px;
+    min-height: 500px;
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    &__tab {
+        margin: 0 5px;
+        width: 222px;
+        height: 52px;
+        border: 2px solid #6B6B6B;
+        background-color: rgba(0, 0, 0, .6);
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        color: #E1DBDB;
+        text-transform: uppercase;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px #C70101;
+        }
+        div{
+            transform: skewX(25deg);
+        }
+    }
+    &__content {
+        position: relative;
+        margin-top: 55px;
+        display: none; // поставить none (после настройки карточек)
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 1140px;
+        &_active {
+            display: flex;
+        }
+    }
+    &-item {
+        display: none;
+        width: 865px;
+        min-height: 400px;
+        border: 1px solid #E8E8E8;
+        background-color: rgba(0, 0, 0, .6);
+        padding: 20px 15px 25px 15px;
+        overflow: hidden;
+        &_block {
+            display: block;
+        }
+        &_wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &_content {
+            width: 50%;
+            margin-right: 0;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__link {
+            display: block;
+            margin: 0 auto;
+            font-size: 14px;
+            font-weight: 300;
+            color: #E8E8E8;
+            text-align: center;
+            text-decoration: none;
+        }
+        &_link {
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        &_heading {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &__back {
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        &_list {
+            /* display: none; */
+            position: relative;
+            width: 50%;
+            margin: 0 0 0 20px;
+            padding: 0 20px 0 20px;
+            margin-bottom: 0;
+            transition: translateX(0%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0;
+            }
+        }
+        &__subwrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        &__game {
+            padding: 42px;
+            border: 2px solid rgba(0, 0, 0, .7);
+            min-width: 235px;
+            min-height: 145px;
+            transition: 0.5s all;
+            cursor: pointer;
+            &:hover {
+                border: 2px solid #6B6B6B;
+                box-shadow: 7px 7px 30px $game_catalog;
+                min-width: 280px;
+                padding: 60px;
+            }
+            &-hw {
+                margin-left: 15px;
+                background: url(../img/halo_wars-min.jpg) center (center / cover) no-repeat;  // Halo: Wars 
+            }   
+            &-hr {
+                background: url(../img/reach-min.jpg) center (center / cover) no-repeat;  // Halo Reach
+            }
+            &-hce {
+                margin-right: 15px;
+                background: url(../img/combat_evolved-min.png) center (center / cover) no-repeat;  // Halo: Combat Evolved
+            }
+            &-hftr {
+                margin-left: 15px;
+                background: url(../img/firetaem-min.jpg) center (center / cover) no-repeat;  // Halo: Fireteam Raven
+            }
+            &-htwo {
+                background: url(../img/halo_2-min.jpeg) center (center / cover) no-repeat;  // Halo 2
+            }
+            &-hodst {
+                margin-right: 15px;
+                background: url(../img/odst-min.jpg) center (center / cover) no-repeat;  // Halo 3: ODST
+            }
+            &-three {
+                margin-left: 15px;
+                background: url(../img/halo_3-min.png) center (center / cover) no-repeat; // Halo 3
+            }
+            &-hsa {
+                background: url(../img/assault-min.jpg) center (center / cover) no-repeat;  // Halo: Spartan Assault
+                &:hover {
+                    margin: 0 5px 0 5px;
+                }
+            }
+            &-hfour {
+                margin-right: 15px;
+                background: url(../img/halo_4-min.jpeg) center (center / cover) no-repeat;  // Halo 4
+            }
+            &-hss {
+                margin-left: 15px;
+                background: url(../img/spartan_strike-min.jpg) center (center / cover) no-repeat;  // Halo: Spartan Strike
+            }
+            &-guardians {
+                background: url(../img/halo_5-min.jpg) center (center / cover) no-repeat;  // Halo 5: Guardians
+            }
+            &-hwtwo {
+                margin-right: 15px;
+                background: url(../img/wars_2-min.jpeg) center (center / cover) no-repeat;  // Halo 5: Guardians
+            } 
+        }
+        &__book {
+            padding: 42px;
+            border: 2px solid rgba(0, 0, 0, .7);
+            min-width: 235px;
+            min-height: 145px;
+            transition: 0.5s all;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 7px 7px 30px $book_catalog;
+                border: 2px solid #6B6B6B;
+                min-width: 280px;
+                padding: 60px;
+            }
+            &-htfor {
+                margin-left: 15px;
+                background: url(../img/fall_of_reach-min.png) center (center / cover) no-repeat; // Halo: The fall of reach
+            }
+            &-htf {
+                background: url(../img/flood-min.jpg) center (center / cover) no-repeat; // Halo: The flood
+            }
+            &-hfs {
+                margin-right: 15px;
+                background: url(../img/first_strike-min.png) center (center / cover) no-repeat; // Halo: First Strike
+            }
+            &-hch {
+                margin-left: 15px;
+                background: url(../img/harvest_1-min.png) center (center / cover) no-repeat; // Halo: contact Harvest
+            }
+            &-hgoo {
+                background: url(../img/onyx-min.jpg) center (center / cover) no-repeat; // Halo: Ghost of Onyx
+            }
+            &-hglass {
+                margin-right: 15px;
+                background: url(../img/Halo_Glasslands-min.jpg) center (center / cover) no-repeat; // Halo: Glasslands
+            }
+            &-hcr {
+                margin-left: 15px;
+                background: url(../img/criptum-min.jpg) center (center / cover) no-repeat; // Halo: Cryptum
+            }
+            &-hprim {
+                background: url(../img/primordium-min.jpg) center (center / cover) no-repeat; // Halo: Primordium
+            }
+            &-hsil {
+                margin-right: 15px;
+                background: url() center (center / cover) no-repeat; // Halo: Silentium
+            }
+            &-httw {
+                margin-left: 15px;
+                background: url(../../img/thursdaywar-min.jpg) center (center / cover) no-repeat; // Halo: Halo: The Thursday War
+            }
+            &-hmd {
+                background: url(../img/mortal_dicata-min.jpg) center (center / cover) no-repeat; // Halo: Mortal Dicata
+            }
+            &-hbc {
+                margin-right: 15px;
+                background: url(../img/Halo-Broken-Circle-min.jpg) center (center / cover) no-repeat; // Halo: Broken Circle
+            }
+        }
+    &__movie {
+        padding: 42px;
+        border: 2px solid rgba(0, 0, 0, .7);
+        min-width: 235px;
+        min-height: 145px;
+        transition: 0.5s all;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 7px 7px 30px $movies_catalog;
+            border: 2px solid #6B6B6B;
+            min-width: 280px;
+            padding: 60px;
+        }
+        &-hfud {
+            margin-left: 15px;
+            background: url(../img/unto_down-min.jpg) center (center / cover) no-repeat; // Halo: Forward Unto Down
+        }
+        &-htw {
+            background: url(../img/halo_tw-min.jpg) center (center / cover) no-repeat; // Halo: Twillight
+        }
+        &-hser {
+            margin-right: 25px;
+            background: url(../img/serial-min.jpg) center (center / cover) no-repeat; // Halo serial
+        }
+        &-hleg {
+            margin-left: 15px;
+            background: url(../img/legend-min.jpg) center (center / cover) no-repeat; // Halo: Legend
+        }
+    }
+    &__border {
+        padding: 25px;
+        border: 2px solid #E8E8E8;
+        width: 150px;
+        height: 95px;
+        background-color: rgba(0, 0, 0, .7);
+        &-wars {
+            padding: 36px;
+        }
+        &-reach {
+            padding: 32px;
+        }
+        &-combat {
+            padding: 23px;
+        }
+        &-fireteam {
+            padding: 19px;
+        }
+        &-two {
+            padding: 32px;
+        }
+        &-odst {
+            padding: 28px;
+        }
+        &-hthr {
+            padding: 32px;
+        }
+        &-spartanas {
+            padding: 20px;
+        }
+        &-four {
+            padding: 30px;
+        }
+        &-spartanst {
+            padding: 20px;
+        }
+        &-hguards {
+            padding: 21px;
+        }
+        &-warstwo {
+            padding: 29px;
+        }
+    }
+  }
+  &__closelink {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+}
